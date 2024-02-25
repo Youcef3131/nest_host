@@ -1,12 +1,12 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { UpdateFjsAlertDto } from './dto/update-fjs-alert.dto';
 import { PrismaService } from 'src/prisma.service';
-import { FjsAlert } from './fjsAlerts.model';
+import { FjsALert } from './fjsAlerts.model';
 
 @Injectable()
 export class FjsAlertService {
   constructor(private prisma: PrismaService) {}
-  async create(data: FjsAlert) {
+  async create(data: FjsALert) {
     return this.prisma.fjsAlert.create({
       data,
     });
