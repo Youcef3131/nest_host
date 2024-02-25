@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "FjsAlert" ALTER COLUMN "date" DROP DEFAULT;
