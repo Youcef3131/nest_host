@@ -1,4 +1,4 @@
 import { PartialType } from '@nestjs/mapped-types';
-import { FjsAlert } from '../fjsAlerts.model';
+import { FjsALert } from '../fjsAlerts.model';
 
-export class UpdateFjsAlertDto extends PartialType(FjsAlert) {}
+export class UpdateFjsAlertDto extends PartialType(FjsALert) {}
