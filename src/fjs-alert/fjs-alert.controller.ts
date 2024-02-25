@@ -12,7 +12,6 @@ import {
 import { FjsAlertService } from './fjs-alert.service';
 import { CreateFjsAlertDto } from './dto/create-fjs-alert.dto';
 import { UpdateFjsAlertDto } from './dto/update-fjs-alert.dto';
-import { FjsALert } from './fjsAlerts.model';
 import { Request, Response } from 'express';
 import { Prisma } from '@prisma/client';
 
