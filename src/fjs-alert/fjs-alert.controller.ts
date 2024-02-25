@@ -10,7 +10,7 @@ import {
 import { FjsAlertService } from './fjs-alert.service';
 import { CreateFjsAlertDto } from './dto/create-fjs-alert.dto';
 import { UpdateFjsAlertDto } from './dto/update-fjs-alert.dto';
-import { FjsAlert } from './fjsAlert.model';
+import { FjsAlert } from './fjsAlerts.model';
 
 @Controller('fjs-alert')
 export class FjsAlertController {

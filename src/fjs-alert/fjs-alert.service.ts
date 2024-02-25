@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateFjsAlertDto } from './dto/create-fjs-alert.dto';
 import { UpdateFjsAlertDto } from './dto/update-fjs-alert.dto';
 import { PrismaService } from 'src/prisma.service';
-import { FjsAlert } from './fjsAlert.model';
+import { FjsAlert } from './fjsAlerts.model';
 
 @Injectable()
 export class FjsAlertService {
