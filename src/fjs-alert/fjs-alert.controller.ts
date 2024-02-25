@@ -31,13 +31,13 @@ export class FjsAlertController {
     return this.fjsAlertService.findOne(+id);
   }
 
-  @Patch(':id')
-  update(
-    @Param('id') id: string,
-    @Body() updateFjsAlertDto: UpdateFjsAlertDto,
-  ) {
-    return this.fjsAlertService.update(+id, updateFjsAlertDto);
-  }
+  // @Patch(':id')
+  // update(
+  //   @Param('id') id: string,
+  //   @Body() updateFjsAlertDto: UpdateFjsAlertDto,
+  // ) {
+  //   return this.fjsAlertService.update(+id, updateFjsAlertDto);
+  // }
 
   @Delete(':id')
   remove(@Param('id') id: string) {

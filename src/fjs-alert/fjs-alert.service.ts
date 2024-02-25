@@ -1,5 +1,4 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { CreateFjsAlertDto } from './dto/create-fjs-alert.dto';
 import { UpdateFjsAlertDto } from './dto/update-fjs-alert.dto';
 import { PrismaService } from 'src/prisma.service';
 import { FjsAlert } from './fjsAlerts.model';
@@ -33,22 +32,22 @@ export class FjsAlertService {
     });
   }
 
-  async update(id: number, updateFjsAlertDto: UpdateFjsAlertDto) {
-    const existingFjsAlert = await this.prisma.fjsAlert.findUnique({
-      where: {
-        id,
-      },
-    });
-    if (!existingFjsAlert) {
-      throw new NotFoundException('FjsAlert Not Found !!!');
-    }
-    return this.prisma.fjsAlert.update({
-      where: {
-        id,
-      },
-      data: updateFjsAlertDto,
-    });
-  }
+  // async update(id: number, updateFjsAlertDto: UpdateFjsAlertDto) {
+  //   const existingFjsAlert = await this.prisma.fjsAlert.findUnique({
+  //     where: {
+  //       id,
+  //     },
+  //   });
+  //   if (!existingFjsAlert) {
+  //     throw new NotFoundException('FjsAlert Not Found !!!');
+  //   }
+  //   return this.prisma.fjsAlert.update({
+  //     where: {
+  //       id,
+  //     },
+  //     data: updateFjsAlertDto,
+  //   });
+  // }
 
   async remove(id: number) {
     return this.prisma.fjsAlert.delete({
